@@ -24,7 +24,7 @@ cd technical-test-bemobile
 ```
 4. Instale as dependências do projeto usando o npm:
 ```bash
-cd npm i
+npm i
 ```
 ## Como Usar
 Após instalar o projeto e suas dependências, você pode executar os seguintes comandos:
