@@ -5,6 +5,7 @@ import Search from "./components/Search/search"
 import TableDesktop from "./components/TableDesktop/table-desktop"
 import filterEmployees from "./util/filterEmployees"
 import { useGetEmployees } from "./hooks/useEmployers"
+import TableMobile from "./components/TableMobile/table-mobile"
 
 function App() {
   const { data, isSuccess } = useGetEmployees()
@@ -21,6 +22,7 @@ function App() {
       </div>
 
       {isSuccess && <TableDesktop employees={employees} />}
+      {isSuccess && <TableMobile employees={employees} />}
 
     </Container>
   )
